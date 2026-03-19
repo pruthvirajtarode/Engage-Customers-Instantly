@@ -128,8 +128,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-md);
+    border-radius: 10px;
     font-weight: var(--font-weight-bold);
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 208, 132, 0.3);
 }
 
 .logo-text {
@@ -165,11 +168,24 @@ body {
     text-decoration: none;
     color: var(--color-text-dark);
     font-weight: var(--font-weight-medium);
-    transition: color var(--transition);
+    transition: all var(--transition);
     font-size: var(--font-size-base);
 }
 
 .navbar__link:hover {
+    color: var(--color-primary);
+}
+
+.navbar__link--outlined {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: 2px solid var(--color-text-dark);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition);
+}
+
+.navbar__link--outlined:hover {
+    border-color: var(--color-primary);
     color: var(--color-primary);
 }
 
@@ -179,6 +195,8 @@ body {
     color: var(--color-white);
     border-radius: var(--radius-md);
     font-weight: var(--font-weight-semibold);
+    border: none;
+    transition: all var(--transition);
 }
 
 .navbar__link--cta:hover {
@@ -191,7 +209,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--spacing-5xl) var(--spacing-lg);
-    text-align: center;
     display: flex;
     align-items: center;
     gap: var(--spacing-5xl);
@@ -233,15 +250,13 @@ body {
 .hero__subtitle {
     font-size: var(--font-size-lg);
     color: var(--color-text-gray);
-    max-width: 700px;
-    margin: 0 auto var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
     line-height: 1.8;
     letter-spacing: 0.3px;
 }
 
 .hero__badges {
     display: flex;
-    justify-content: center;
     gap: var(--spacing-2xl);
     margin-bottom: var(--spacing-2xl);
     flex-wrap: wrap;
@@ -259,7 +274,6 @@ body {
 .hero__buttons {
     display: flex;
     gap: var(--spacing-lg);
-    justify-content: center;
     flex-wrap: wrap;
 }
 
