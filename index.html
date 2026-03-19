@@ -35,7 +35,7 @@
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__title">
-                The <span class="highlight-green">#1 WhatsApp</span>
+                The <span class="highlight-green">#1 Conversational</span>
                 <span class="highlight-green">growth platform</span>
             </h1>
             <p class="hero__subtitle">
@@ -126,7 +126,7 @@
             </div>
 
             <!-- MARKETING TAB -->
-            <div class="tabs__content tabs__content--active" id="marketing-tab">
+            <div class="tabs__content tabs__content--active tabs__content--marketing" id="marketing-tab">
                 <div class="tab__inner">
                     <div class="tab__wrapper">
                         <div class="tab__text">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- SALES TAB -->
-            <div class="tabs__content" id="sales-tab">
+            <div class="tabs__content tabs__content--sales" id="sales-tab">
                 <div class="tab__inner">
                     <div class="tab__wrapper">
                         <div class="tab__text">
@@ -220,7 +220,7 @@
             </div>
 
             <!-- SUPPORT TAB -->
-            <div class="tabs__content" id="support-tab">
+            <div class="tabs__content tabs__content--support" id="support-tab">
                 <div class="tab__inner">
                     <div class="tab__wrapper">
                         <div class="tab__text">
@@ -296,7 +296,54 @@
         <h2 class="integrations__title">Connect Wati with your team's existing stack</h2>
         <p class="integrations__subtitle">Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favourite tools are just a click away.</p>
         <div class="integration-grid">
-            <div class="integration-logos">
+            <svg class="integration-hub" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hub connection lines -->
+                <line x1="300" y1="250" x2="100" y2="80" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="500" y2="80" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="150" y2="420" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="450" y2="420" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="50" y2="250" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="550" y2="250" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="100" y2="420" stroke="#e0e0e0" stroke-width="2"/>
+                <line x1="300" y1="250" x2="500" y2="420" stroke="#e0e0e0" stroke-width="2"/>
+                
+                <!-- Center WhatsApp Hub -->
+                <circle cx="300" cy="250" r="45" fill="#00D084"/>
+                <text x="300" y="260" text-anchor="middle" font-size="16" font-weight="bold" fill="white">WhatsApp</text>
+                
+                <!-- Top Left -->
+                <rect x="70" y="35" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="100" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Yotpo</text>
+                
+                <!-- Top Right -->
+                <rect x="470" y="35" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="500" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Make</text>
+                
+                <!-- Bottom Left -->
+                <rect x="70" y="390" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="100" y="422" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Zapier</text>
+                
+                <!-- Bottom Right -->
+                <rect x="470" y="390" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="500" y="422" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Shopify</text>
+                
+                <!-- Left -->
+                <rect x="5" y="220" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="35" y="252" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">HubSpot</text>
+                
+                <!-- Right -->
+                <rect x="535" y="220" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="565" y="252" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Salesforce</text>
+                
+                <!-- Middle Bottom Left -->
+                <rect x="70" y="250" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="100" y="282" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Klaviyo</text>
+                
+                <!-- Middle Bottom Right -->
+                <rect x="470" y="250" width="60" height="60" fill="#f5f5f5" rx="8"/>
+                <text x="500" y="282" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">+100 More</text>
+            </svg>
+            <div class="integration-logos" style="display: none;">
                 <div class="integration-logo">
                     <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
                         <rect width="80" height="80" fill="#f5f5f5" rx="8"/>
