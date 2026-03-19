@@ -1,495 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StreamFlow - Professional customer messaging platform for modern businesses">
-    <meta name="keywords" content="messaging, communication, customer engagement, SaaS">
-    <meta name="author" content="StreamFlow">
-    <title>StreamFlow - Customer Messaging Platform</title>
-
-    <!-- Favicon Placeholder -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%236366f1'>S</text></svg>">
-
-    <!-- Stylesheets -->
+    <meta name="description" content="Wati - The #1 business messaging platform">
+    <meta name="keywords" content="WhatsApp, messaging, business communication">
+    <title>Wati - Business Messaging Platform</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Skip to Main Content Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- ===== NAVIGATION ===== -->
-    <header class="navbar navbar--sticky">
-        <nav class="navbar__container">
-            <!-- Logo -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar--sticky">
+        <div class="navbar__wrapper">
             <div class="navbar__logo">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="StreamFlow Logo">
-                    <rect width="32" height="32" rx="8" fill="#6366f1"/>
-                    <text x="50%" y="50%" transform="translate(-8, 8)" font-size="20" font-weight="bold" fill="white">S</text>
-                </svg>
-                <span class="navbar__brand">StreamFlow</span>
+                <span class="logo-icon">W</span>
+                <span class="logo-text">wati</span>
             </div>
-
-            <!-- Menu Toggle Button for Mobile -->
-            <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menu-toggle">
-                <span class="navbar__toggle-line"></span>
-                <span class="navbar__toggle-line"></span>
-                <span class="navbar__toggle-line"></span>
+            
+            <button class="navbar__toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
             </button>
 
-            <!-- Navigation Menu -->
             <ul class="navbar__menu" id="navbar-menu">
-                <li class="navbar__item"><a href="#features" class="navbar__link">Features</a></li>
-                <li class="navbar__item"><a href="#how-it-works" class="navbar__link">How It Works</a></li>
-                <li class="navbar__item"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
-                <li class="navbar__item"><a href="#pricing" class="navbar__link">Pricing</a></li>
-                <li class="navbar__item navbar__item--cta">
-                    <a href="#get-started" class="navbar__button navbar__button--primary">Get Started</a>
-                </li>
+                <li><a href="#" class="navbar__link">Pricing</a></li>
+                <li><a href="#" class="navbar__link">Book Demo</a></li>
+                <li><a href="#" class="navbar__link navbar__link--cta">Try for Free</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <main id="main-content">
-        <!-- ===== HERO SECTION ===== -->
-        <section class="hero">
-            <div class="hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Engage Customers Instantly</h1>
-                    <p class="hero__subtitle">Send real-time messages, automate responses, and grow your business with our powerful messaging platform designed for modern enterprises.</p>
-                    <div class="hero__actions">
-                        <a href="#get-started" class="button button--primary button--lg">Start Free Trial</a>
-                        <button class="button button--secondary button--lg" id="demo-video">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                            </svg>
-                            Watch Demo
-                        </button>
-                    </div>
-                    <p class="hero__meta">✓ Free for 30 days • No credit card required</p>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero__image-placeholder">
-                        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="gradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.1" />
-                                    <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="500" height="400" fill="url(#gradientBg)" rx="12"/>
-                            <rect x="20" y="20" width="460" height="360" fill="none" stroke="#6366f1" stroke-width="2" rx="8" opacity="0.3"/>
-                            <circle cx="250" cy="200" r="60" fill="#6366f1" opacity="0.1"/>
-                            <circle cx="250" cy="200" r="40" fill="#a855f7" opacity="0.15"/>
-                            <path d="M 200 150 Q 250 120 300 150 L 300 250 Q 250 280 200 250 Z" fill="#6366f1" opacity="0.2"/>
-                        </svg>
-                    </div>
-                </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">
+                The <span class="highlight-green">#1 business</span>
+                <span class="highlight-green">messaging</span> platform
+            </h1>
+            <p class="hero__subtitle">
+                From the first marketing touchpoint through the sales cycle to ongoing customer success,
+                Wati drives faster ROI with an easy-to-use, scalable AI-native platform.
+            </p>
+            <div class="hero__badges">
+                <span class="badge">Trusted by 16,000+ businesses worldwide</span>
+                <span class="badge">4.6/5 on G2</span>
             </div>
-        </section>
-
-        <!-- ===== TRUSTED BRANDS SECTION ===== -->
-        <section class="brands">
-            <div class="brands__container">
-                <p class="brands__label">Trusted by industry leaders</p>
-                <div class="brands__grid">
-                    <div class="brands__item">
-                        <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
-                            <text x="10" y="28" font-size="24" font-weight="bold" fill="#6B7280">TechCorp</text>
-                        </svg>
-                    </div>
-                    <div class="brands__item">
-                        <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
-                            <text x="10" y="28" font-size="24" font-weight="bold" fill="#6B7280">DataFlow</text>
-                        </svg>
-                    </div>
-                    <div class="brands__item">
-                        <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
-                            <text x="10" y="28" font-size="24" font-weight="bold" fill="#6B7280">CloudSync</text>
-                        </svg>
-                    </div>
-                    <div class="brands__item">
-                        <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
-                            <text x="10" y="28" font-size="24" font-weight="bold" fill="#6B7280">InnovateLabs</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FEATURES SECTION ===== -->
-        <section class="features" id="features">
-            <div class="features__container">
-                <div class="features__header">
-                    <h2 class="section-title">Powerful Features</h2>
-                    <p class="section-subtitle">Everything you need to manage customer conversations in one place</p>
-                </div>
-
-                <div class="features__grid">
-                    <!-- Feature Card 1 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20" cy="20" r="18" stroke="#6366f1" stroke-width="2"/>
-                                <path d="M14 20h12M20 14v12" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Real-time Messaging</h3>
-                        <p class="feature-card__text">Connect with your customers instantly across all channels with sub-second delivery</p>
-                    </article>
-
-                    <!-- Feature Card 2 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="8" width="32" height="24" rx="2" stroke="#6366f1" stroke-width="2"/>
-                                <path d="M4 12h32M8 16h24" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Smart Automation</h3>
-                        <p class="feature-card__text">Automate responses with AI-powered bots and workflows to save time and resources</p>
-                    </article>
-
-                    <!-- Feature Card 3 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20" cy="20" r="14" stroke="#6366f1" stroke-width="2"/>
-                                <path d="M20 12v8l6 3" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">24/7 Availability</h3>
-                        <p class="feature-card__text">Never miss a customer message with round-the-clock availability and notifications</p>
-                    </article>
-
-                    <!-- Feature Card 4 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 4l6.5 12h13l-10.5 8 4 12-12-9-12 9 4-12-10.5-8h13l6.5-12z" stroke="#6366f1" stroke-width="2" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Advanced Analytics</h3>
-                        <p class="feature-card__text">Get detailed insights into customer behavior and optimize your messaging strategy</p>
-                    </article>
-
-                    <!-- Feature Card 5 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 14h24M8 20h24M8 26h16" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                                <rect x="4" y="8" width="32" height="24" rx="2" stroke="#6366f1" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Seamless Integration</h3>
-                        <p class="feature-card__text">Integrate with your favorite tools and platforms with just a few clicks</p>
-                    </article>
-
-                    <!-- Feature Card 6 -->
-                    <article class="feature-card feature-card--fade-in">
-                        <div class="feature-card__icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm-2 26l-6-6 2.83-2.83L18 23.34l9.17-9.17L30 17l-12 12z" fill="#6366f1"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Enterprise Security</h3>
-                        <p class="feature-card__text">Bank-grade encryption and compliance with global data protection regulations</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== HOW IT WORKS SECTION ===== -->
-        <section class="how-it-works" id="how-it-works">
-            <div class="how-it-works__container">
-                <div class="how-it-works__header">
-                    <h2 class="section-title">How It Works</h2>
-                    <p class="section-subtitle">Get started in just three simple steps</p>
-                </div>
-
-                <div class="steps">
-                    <!-- Step 1 -->
-                    <div class="step step--fade-in">
-                        <div class="step__number">1</div>
-                        <h3 class="step__title">Connect Your Channels</h3>
-                        <p class="step__description">Link your WhatsApp, Email, SMS, and other communication channels to your StreamFlow account</p>
-                        <div class="step__icon">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="36" fill="#6366f1" opacity="0.1"/>
-                                <circle cx="32" cy="32" r="6" fill="#6366f1"/>
-                                <circle cx="48" cy="32" r="6" fill="#6366f1"/>
-                                <circle cx="32" cy="48" r="6" fill="#6366f1"/>
-                                <line x1="38" y1="32" x2="42" y2="32" stroke="#6366f1" stroke-width="2"/>
-                                <line x1="32" y1="38" x2="32" y2="42" stroke="#6366f1" stroke-width="2"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="step step--fade-in">
-                        <div class="step__number">2</div>
-                        <h3 class="step__title">Set Up Automation</h3>
-                        <p class="step__description">Create workflows and automations to handle common customer inquiries instantly</p>
-                        <div class="step__icon">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="36" fill="#6366f1" opacity="0.1"/>
-                                <rect x="24" y="28" width="32" height="24" rx="2" stroke="#6366f1" stroke-width="2"/>
-                                <path d="M40 36h-8M40 44h-8M56 36l-4 4l-2-2" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="step step--fade-in">
-                        <div class="step__number">3</div>
-                        <h3 class="step__title">Monitor & Optimize</h3>
-                        <p class="step__description">Track performance metrics and continuously improve your customer engagement strategy</p>
-                        <div class="step__icon">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="36" fill="#6366f1" opacity="0.1"/>
-                                <path d="M28 48l8-12l8 6l12-18" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="28" cy="48" r="3" fill="#6366f1"/>
-                                <circle cx="44" cy="42" r="3" fill="#6366f1"/>
-                                <circle cx="56" cy="30" r="3" fill="#6366f1"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== TESTIMONIALS SECTION ===== -->
-        <section class="testimonials" id="testimonials">
-            <div class="testimonials__container">
-                <div class="testimonials__header">
-                    <h2 class="section-title">What Our Customers Say</h2>
-                    <p class="section-subtitle">Join thousands of satisfied businesses worldwide</p>
-                </div>
-
-                <div class="testimonials__grid">
-                    <!-- Testimonial 1 -->
-                    <article class="testimonial testimonial--fade-in">
-                        <div class="testimonial__rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
-                        <p class="testimonial__text">"StreamFlow transformed how we communicate with customers. The automation saves us hours every week while improving satisfaction."</p>
-                        <div class="testimonial__author">
-                            <div class="testimonial__avatar">AJ</div>
-                            <div class="testimonial__info">
-                                <h4 class="testimonial__name">Alexandra Johnson</h4>
-                                <p class="testimonial__role">CEO, TechCorp Solutions</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Testimonial 2 -->
-                    <article class="testimonial testimonial--fade-in">
-                        <div class="testimonial__rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
-                        <p class="testimonial__text">"Best customer messaging platform out there. The integration with our existing tools was seamless and the support team is exceptional."</p>
-                        <div class="testimonial__author">
-                            <div class="testimonial__avatar">MR</div>
-                            <div class="testimonial__info">
-                                <h4 class="testimonial__name">Marcus Rodriguez</h4>
-                                <p class="testimonial__role">Product Manager, Digital Ventures</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Testimonial 3 -->
-                    <article class="testimonial testimonial--fade-in">
-                        <div class="testimonial__rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
-                        <p class="testimonial__text">"The ROI we've seen with StreamFlow is incredible. Customer response times dropped by 70% and our sales increased by 45%."</p>
-                        <div class="testimonial__author">
-                            <div class="testimonial__avatar">SL</div>
-                            <div class="testimonial__info">
-                                <h4 class="testimonial__name">Sarah Lee</h4>
-                                <p class="testimonial__role">Founder, CloudScale Inc</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== CTA SECTION ===== -->
-        <section class="cta" id="get-started">
-            <div class="cta__container">
-                <h2 class="cta__title">Ready to Transform Your Customer Engagement?</h2>
-                <p class="cta__subtitle">Join thousands of businesses using StreamFlow to deliver exceptional customer experiences</p>
-                <div class="cta__actions">
-                    <a href="#" class="button button--primary button--lg">Start Your Free Trial</a>
-                    <a href="#" class="button button--outline button--lg">Schedule a Demo</a>
-                </div>
-                <p class="cta__note">No credit card required • Setup takes less than 5 minutes</p>
-            </div>
-        </section>
-
-        <!-- ===== PRICING SECTION ===== -->
-        <section class="pricing" id="pricing">
-            <div class="pricing__container">
-                <div class="pricing__header">
-                    <h2 class="section-title">Simple, Transparent Pricing</h2>
-                    <p class="section-subtitle">Choose the perfect plan for your business</p>
-                </div>
-
-                <div class="pricing__grid">
-                    <!-- Starter Plan -->
-                    <div class="pricing-card pricing-card--fade-in">
-                        <h3 class="pricing-card__name">Starter</h3>
-                        <p class="pricing-card__description">Perfect for small teams</p>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount">29</span>
-                            <span class="pricing-card__period">/month</span>
-                        </div>
-                        <ul class="pricing-card__features">
-                            <li class="pricing-card__feature">✓ Up to 1,000 messages/month</li>
-                            <li class="pricing-card__feature">✓ 2 team members</li>
-                            <li class="pricing-card__feature">✓ Basic analytics</li>
-                            <li class="pricing-card__feature">✓ Email support</li>
-                        </ul>
-                        <button class="button button--outline button--block">Get Started</button>
-                    </div>
-
-                    <!-- Professional Plan (Featured) -->
-                    <div class="pricing-card pricing-card--featured pricing-card--fade-in">
-                        <span class="pricing-card__badge">Most Popular</span>
-                        <h3 class="pricing-card__name">Professional</h3>
-                        <p class="pricing-card__description">For growing businesses</p>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__currency">$</span>
-                            <span class="pricing-card__amount">79</span>
-                            <span class="pricing-card__period">/month</span>
-                        </div>
-                        <ul class="pricing-card__features">
-                            <li class="pricing-card__feature">✓ Up to 10,000 messages/month</li>
-                            <li class="pricing-card__feature">✓ 10 team members</li>
-                            <li class="pricing-card__feature">✓ Advanced analytics</li>
-                            <li class="pricing-card__feature">✓ AI-powered automation</li>
-                            <li class="pricing-card__feature">✓ Priority support</li>
-                        </ul>
-                        <button class="button button--primary button--block">Get Started</button>
-                    </div>
-
-                    <!-- Enterprise Plan -->
-                    <div class="pricing-card pricing-card--fade-in">
-                        <h3 class="pricing-card__name">Enterprise</h3>
-                        <p class="pricing-card__description">For large-scale operations</p>
-                        <div class="pricing-card__price">
-                            <span class="pricing-card__label">Custom</span>
-                        </div>
-                        <ul class="pricing-card__features">
-                            <li class="pricing-card__feature">✓ Unlimited messages</li>
-                            <li class="pricing-card__feature">✓ Unlimited team members</li>
-                            <li class="pricing-card__feature">✓ Custom integrations</li>
-                            <li class="pricing-card__feature">✓ Dedicated account manager</li>
-                            <li class="pricing-card__feature">✓ 24/7 premium support</li>
-                        </ul>
-                        <button class="button button--outline button--block">Contact Sales</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__content">
-                <!-- Footer Column 1 -->
-                <div class="footer__column">
-                    <div class="footer__brand">
-                        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="8" fill="#6366f1"/>
-                            <text x="50%" y="50%" transform="translate(-8, 8)" font-size="20" font-weight="bold" fill="white">S</text>
-                        </svg>
-                        <h4 class="footer__brand-name">StreamFlow</h4>
-                    </div>
-                    <p class="footer__description">Transforming customer engagement through intelligent messaging.</p>
-                </div>
-
-                <!-- Footer Column 2 -->
-                <div class="footer__column">
-                    <h4 class="footer__title">Product</h4>
-                    <ul class="footer__links">
-                        <li><a href="#features" class="footer__link">Features</a></li>
-                        <li><a href="#pricing" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Security</a></li>
-                        <li><a href="#" class="footer__link">Integrations</a></li>
-                    </ul>
-                </div>
-
-                <!-- Footer Column 3 -->
-                <div class="footer__column">
-                    <h4 class="footer__title">Company</h4>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">About</a></li>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Careers</a></li>
-                        <li><a href="#" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Footer Column 4 -->
-                <div class="footer__column">
-                    <h4 class="footer__title">Legal</h4>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer__link">Terms of Service</a></li>
-                        <li><a href="#" class="footer__link">Cookie Policy</a></li>
-                        <li><a href="#" class="footer__link">GDPR</a></li>
-                    </ul>
-                </div>
-
-                <!-- Footer Column 5 - Social -->
-                <div class="footer__column">
-                    <h4 class="footer__title">Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M19.75 4.5c-.75.33-1.54.56-2.37.66.85-.51 1.5-1.32 1.81-2.28-.8.47-1.68.82-2.62.99-.75-.8-1.82-1.3-3-1.3-2.27 0-4.1 1.83-4.1 4.1 0 .32.04.64.12.95-3.41-.17-6.43-1.8-8.46-4.29-.35.61-.56 1.32-.56 2.08 0 1.42.73 2.68 1.83 3.41-.67-.02-1.31-.2-1.86-.51v.05c0 1.99 1.41 3.64 3.29 4.01-.34.09-.7.14-1.08.14-.26 0-.52-.03-.77-.07.52 1.63 2 2.82 3.76 2.86-1.41 1.1-3.18 1.76-5.11 1.76-.33 0-.65-.02-.97-.06 1.83 1.17 4 1.85 6.34 1.85 7.61 0 11.77-6.31 11.77-11.77 0-.18-.003-.35-.01-.52.8-.57 1.5-1.3 2.05-2.12z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M3.94 2a2 2 0 1 1 3.28 1.48.98.98 0 0 1-.04.04A2 2 0 0 1 3.94 2M4 5.5h3v10H4V5.5zm7.5 0h2.97v1.38h.04c.41-.78 1.42-1.6 2.93-1.6 3.13 0 3.71 2.06 3.71 4.75v5.47h-3v-4.85c0-1.16-.02-2.65-1.62-2.65-1.62 0-1.87 1.27-1.87 2.58v4.92h-3V5.5z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M10 0C4.48 0 0 4.48 0 10c0 4.41 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48C17.13 18.17 20 14.41 20 10c0-5.52-4.48-10-10-10z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2024 StreamFlow. All rights reserved.</p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary">Book a Demo</button>
+                <button class="btn btn--secondary">Try for Free</button>
             </div>
         </div>
+    </section>
+
+    <!-- BRANDS SECTION -->
+    <section class="brands">
+        <h2 class="brands__title">Loved and trusted by 16,000+ businesses, across the globe</h2>
+        <div class="brands__list">
+            <span class="brand">Amazon</span>
+            <span class="brand">Vedantu</span>
+            <span class="brand">Welspun</span>
+            <span class="brand">Heritage</span>
+            <span class="brand">Habuild</span>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT SECTION -->
+    <section class="main-section">
+        <div class="section__header">
+            <h2 class="section__title">WhatsApp at the core. Conversations everywhere.</h2>
+            <p class="section__subtitle">
+                Start with WhatsApp and naturally extend to every channel your customers love. Manage website chat, Instagram,
+                Facebook, SMS, calls and other social channels from one unified inbox.
+            </p>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs">
+            <div class="tabs__nav">
+                <button class="tabs__btn tabs__btn--active" data-tab="marketing">Marketing</button>
+                <button class="tabs__btn" data-tab="sales">Sales</button>
+                <button class="tabs__btn" data-tab="support">Support</button>
+            </div>
+
+            <!-- MARKETING TAB -->
+            <div class="tabs__content tabs__content--active" id="marketing-tab">
+                <div class="tab__inner">
+                    <div class="tab__text">
+                        <h3>Acquire, engage, and qualify leads with personalized campaigns at scale</h3>
+                        <ul class="benefits-list">
+                            <li>✓ Convert every touchpoint into meaningful conversations instantly</li>
+                            <li>✓ Improve attribution and increase ROI with Meta and Google ads</li>
+                            <li>✓ Auto-engage users and drive amazing post-conversion workflows</li>
+                        </ul>
+                        <div class="metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">4X</span>
+                                <p>LESS CACS</p>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">3X</span>
+                                <p>MORE ROI</p>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">85%</span>
+                                <p>HIGHER RESPONSE RATE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SALES TAB -->
+            <div class="tabs__content" id="sales-tab">
+                <div class="tab__inner">
+                    <h3>Accelerate pipeline, increase conversions, and shorten sales cycles</h3>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">30%</span>
+                            <p>REDUCTION IN SALES CYCLE</p>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">3X</span>
+                            <p>FASTER RESPONSES</p>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">20%</span>
+                            <p>MORE REVENUE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUPPORT TAB -->
+            <div class="tabs__content" id="support-tab">
+                <div class="tab__inner">
+                    <h3>Delight customers and handle questions at scale with AI agents</h3>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">40%</span>
+                            <p>FASTER RESOLUTION</p>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">80%</span>
+                            <p>QUERY AUTOMATION</p>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">40%</span>
+                            <p>TICKET REDUCTION</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SECTION -->
+    <section class="ai-section">
+        <h2 class="ai-section__title">10X your performance with Wati AI</h2>
+        <p class="ai-section__subtitle">Let Wati AI handle work for you, so your teams can drive meaningful conversations that build relationships and revenue.</p>
+        
+        <div class="ai-cards">
+            <div class="ai-card ai-card--pink">
+                <h3>Inbound Intelligence Agent</h3>
+                <p>Build agents that qualify leads, uncover intent, and close sales on chat – all in no time.</p>
+                <button class="btn btn--outline">Build Agent</button>
+            </div>
+            <div class="ai-card ai-card--blue">
+                <h3>AI Support Agent</h3>
+                <p>Train your AI support agent in minutes, and let it deflect up to 60% of customer queries</p>
+                <button class="btn btn--outline">Build Agent</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRATIONS SECTION -->
+    <section class="integrations">
+        <h2 class="integrations__title">Connect Wati with your team's existing stack</h2>
+        <p class="integrations__subtitle">Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favourite tools are just a click away.</p>
+        <div class="integration-grid">
+            <p>PayTabs • Salesforce • AI Trillion • Make • Zapier • HubSpot • Yotpo • Klaviyo</p>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+        <h2 class="stats__title">Empowering global leaders with world-class conversation infrastructure</h2>
+        <div class="stats__grid">
+            <div class="stat-item">
+                <span class="stat-number">10B</span>
+                <p>Messages Processed</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">99.9%</span>
+                <p>Historical Uptime</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number badge-icon">✓</span>
+                <p>GDPR Compliant</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <p>Countries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <h2 class="testimonials__title">High-growth teams rely on Wati to build lasting customer relationships</h2>
+        <div class="testimonials__grid">
+            <div class="testimonial-card">
+                <h3 class="company-name">Habuild</h3>
+                <p class="testimonial-text">
+                    "90% of Habuild's new users come from workflows. Wati gave us the personalised connection we were missing,
+                    enabling us to foster a more engaged and trusting community."
+                </p>
+                <p class="author-name">Anshul Agrawal, Co-founder</p>
+            </div>
+            <div class="testimonial-card">
+                <h3 class="company-name">Another Brand</h3>
+                <p class="testimonial-text">
+                    "2X higher engagement rates and incredible customer satisfaction. Wati's platform flexibility helped us achieve remarkable growth."
+                </p>
+                <p class="author-name">Brand Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing">
+        <h2 class="pricing__title">Get great features at a price that makes sense</h2>
+        <p class="pricing__subtitle">Affordable pricing with zero setup fees</p>
+        
+        <div class="pricing__toggle">
+            <span class="toggle-option active">Annual</span>
+            <span class="toggle-option">Monthly</span>
+        </div>
+
+        <div class="pricing__cards">
+            <!-- GROWTH PLAN -->
+            <div class="price-card price-card--growth">
+                <h3>Growth</h3>
+                <p class="plan-desc">Send WhatsApp messages to thousands</p>
+                <div class="price-display">₹2199 <span class="period">/month</span></div>
+                <p class="bill-period">billed annually</p>
+                <p class="users">3 Users Included • No additional</p>
+                <button class="btn btn--secondary btn--block">Select Plan</button>
+                <ul class="features">
+                    <li>✓ Zero-fee WhatsApp setup</li>
+                    <li>✓ Omnichannel inbox</li>
+                </ul>
+            </div>
+
+            <!-- PRO PLAN -->
+            <div class="price-card price-card--pro price-card--featured">
+                <span class="best-value-badge">Best Value</span>
+                <h3>Pro</h3>
+                <p class="plan-desc">Automations, integrations & analytics</p>
+                <div class="price-display">₹4899 <span class="period">/month</span></div>
+                <p class="bill-period">billed annually</p>
+                <p class="users">5 Users Included</p>
+                <button class="btn btn--primary btn--block">Select Plan</button>
+                <ul class="features">
+                    <li>✓ Auto-qualify leads with AI</li>
+                    <li>✓ Powerful analytics</li>
+                </ul>
+            </div>
+
+            <!-- BUSINESS PLAN -->
+            <div class="price-card price-card--business">
+                <h3>Business</h3>
+                <p class="plan-desc">Advanced workflows & scale</p>
+                <div class="price-display">₹14799 <span class="period">/month</span></div>
+                <p class="bill-period">billed annually</p>
+                <p class="users">5 Users Included</p>
+                <button class="btn btn--secondary btn--block">Select Plan</button>
+                <ul class="features">
+                    <li>✓ Scale effortlessly</li>
+                    <li>✓ Custom integrations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <h2 class="cta__title">Already a Wati user? Log in here.</h2>
+        <button class="btn btn--primary btn--lg">Log In</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 Wati. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
